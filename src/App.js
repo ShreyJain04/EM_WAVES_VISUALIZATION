@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from "react";
+import { ParameterProvider } from "./components/context";
+import ParameterControls from "./components/parameterControls";
+import FieldVisualization from "./components/fieldVisualisation";
+import Legend from "./components/legend";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <ParameterProvider>
+      <div style={{ display: "flex" }}>
+        <div
+          style={{
+            width: "250px",
+            padding: "10px",
+            backgroundColor: "#f7f7f7",
+          }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <ParameterControls />
+          <Legend />
+        </div>
+        <div style={{ flexGrow: 1 }}>
+          <FieldVisualization />
+        </div>
+      </div>
+    </ParameterProvider>
   );
 }
 
