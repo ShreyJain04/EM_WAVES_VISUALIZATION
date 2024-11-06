@@ -17,7 +17,7 @@ function App() {
           }}
         >
           <ParameterControls />
-          <Legend />
+          {/* <Legend /> */}
         </div>
         <div style={{ flexGrow: 1 }}>
           <FieldVisualization />
