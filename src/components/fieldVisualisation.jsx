@@ -124,7 +124,7 @@ const MagneticFieldWave = () => {
             const direction = new THREE.Vector3(y, -x, 0).normalize();
             const length = Math.sqrt(x * x + y * y);
             let arrow;
-            arrow = new THREE.ArrowHelper(direction, new THREE.Vector3(0, 0, z), length, 0x00ff00, 0.2, 0.1);
+            arrow = new THREE.ArrowHelper(direction, new THREE.Vector3(0, 0, z), length, 0x0000ff, 0.2, 0.1);
             fieldGroup.current.add(arrow);
         }
     });
@@ -164,13 +164,13 @@ const GridHelper = () => (
 
 // Component to add axis labels
 const AxisLabels = () => {
-    const xLabel = createTextLabel('x', 'red');
+    const xLabel = createTextLabel('x', 'black');
     xLabel.position.set(8, 0, 0);
 
-    const yLabel = createTextLabel('y', 'green');
+    const yLabel = createTextLabel('y', 'black');
     yLabel.position.set(1, 5, 0);
 
-    const zLabel = createTextLabel('z', 'blue');
+    const zLabel = createTextLabel('z', 'black');
     zLabel.position.set(0, 0, 8);
 
     return (
