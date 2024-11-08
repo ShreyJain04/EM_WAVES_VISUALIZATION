@@ -18,6 +18,7 @@ const ParameterControls = () => {
 
     return (
         <div style={{ padding: '20px' }}>
+            {/* <Typography variant="h3">Travis Head</Typography> */}
             <Typography variant="h6">Field Type</Typography>
             <FormControlLabel
                 control={
@@ -41,7 +42,7 @@ const ParameterControls = () => {
             <Typography variant="h6">X Amplitude (meters)</Typography>
             <Slider
                 value={parameters.amplitudeX}
-                min={1}
+                min={0}
                 max={10}
                 step={0.1}
                 onChange={(e, value) => handleParameterChange('amplitudeX', value)}
@@ -50,8 +51,8 @@ const ParameterControls = () => {
             <Typography variant="h6">Y Amplitude (meters)</Typography>
             <Slider
                 value={parameters.amplitudeY}
-                min={1}
-                max={90}
+                min={0}
+                max={10}
                 step={0.5}
                 onChange={(e, value) => handleParameterChange('amplitudeY', value)}
                 valueLabelDisplay="auto"
@@ -73,7 +74,7 @@ const ParameterControls = () => {
             <Typography variant="h6">Frequency (Hertz)</Typography>
             <Slider
                 value={parameters.frequency}
-                min={0}
+                min={0.1}
                 max={2}
                 step={0.1}
                 onChange={(e, value) => handleParameterChange('frequency', value)}
