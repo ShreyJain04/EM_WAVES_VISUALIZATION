@@ -81,7 +81,7 @@ const ElectricFieldWave = () => {
         for (let i = 0; i < numArrows; i++) {
             const z = i * spacing - (numArrows * spacing) / 2; // Position along z-axis
             const x = amplitudeX * Math.cos(waveNumber * z - angularFrequency * time); // Oscillate in x
-            const y = amplitudeY * Math.cos(waveNumber * z - angularFrequency * time + phaseDifference); // Oscillate in y with phase difference
+            const y = amplitudeY * Math.cos(waveNumber * z - angularFrequency * time - phaseDifference); // Oscillate in y with phase difference
 
             const direction = new THREE.Vector3(x, y, 0).normalize();
             const length = Math.sqrt(x * x + y * y);
@@ -119,7 +119,7 @@ const MagneticFieldWave = () => {
         for (let i = 0; i < numArrows; i++) {
             const z = i * spacing - (numArrows * spacing) / 2; // Position along z-axis
             const x = amplitudeX * Math.cos(waveNumber * z - angularFrequency * time) / eta; // Oscillate in x
-            const y = amplitudeY * Math.cos(waveNumber * z - angularFrequency * time + phaseDifference) /eta; // Oscillate in y with phase difference
+            const y = amplitudeY * Math.cos(waveNumber * z - angularFrequency * time - phaseDifference) /eta; // Oscillate in y with phase difference
 
             const direction = new THREE.Vector3(y, -x, 0).normalize();
             const length = Math.sqrt(x * x + y * y);
