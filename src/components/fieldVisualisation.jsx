@@ -4,6 +4,7 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 import { OrbitControls } from '@react-three/drei';
 import { useParameters } from './context';
+import { Typography } from '@mui/material';
 
 // Constants for wave properties
 let amplitudeX = 2; // Amplitude of the electric field in the x-direction
@@ -46,16 +47,20 @@ const EmWaveVisualization = () => {
 
     // wavelength = 4 ;
     return (
-        <Canvas style={{ width: '100%', height: '100vh' }} camera={{ position: [6, 6, 8] }}>
-            <ambientLight intensity={0.5} />
-            <pointLight position={[10, 10, 10]} />
-            <OrbitControls />
-            {efield && <ElectricFieldWave />}
-            {mfield && <MagneticFieldWave/>}
-            {efield && <PolarizationEllipse />}
-            <GridHelper />
-            <AxisLabels /> {/* Add axis labels */}
-        </Canvas>
+        <div>
+            //
+            <Typography variant="h4" style={{textAlign: 'center'}}>Polarization of Uniform Plane Wave</Typography>
+            <Canvas style={{ width: '100%', height: '100vh' }} camera={{ position: [6, 6, 8] }}>
+                <ambientLight intensity={0.5} />
+                <pointLight position={[10, 10, 10]} />
+                <OrbitControls />
+                {efield && <ElectricFieldWave />}
+                {mfield && <MagneticFieldWave/>}
+                {efield && <PolarizationEllipse />}
+                <GridHelper />
+                <AxisLabels /> {/* Add axis labels */}
+            </Canvas>
+        </div>
     );
 };
 
