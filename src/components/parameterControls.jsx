@@ -100,13 +100,7 @@ const ParameterControls = () => {
             <div style={{marginTop:4, fontSize:17}}>
                 Wave velocity = {parameters.frequency * parameters.wavelength} m/s
             </div>
-            <div style={{ border: '1px solid black', padding: '10px', marginTop: '20px' }}>
-                <Typography variant="h5">Created By:</Typography>
-                <Typography variant="h6">1. Rachit Jain</Typography>
-                <Typography variant="h6">2. Mohd Ishan</Typography>
-                <Typography variant="h6">3. Katravath Vaishnavi</Typography>
-                <Typography variant="body2">(From IIT Bhubaneswar)</Typography>
-            </div>
+            
         </div>
     );
 };
