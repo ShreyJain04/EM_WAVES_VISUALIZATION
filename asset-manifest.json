@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/EM_WAVES_VISUALIZATION/static/css/main.e6c13ad2.css",
+    "main.js": "/EM_WAVES_VISUALIZATION/static/js/main.7190a36c.js",
+    "static/js/453.3ef49dff.chunk.js": "/EM_WAVES_VISUALIZATION/static/js/453.3ef49dff.chunk.js",
+    "index.html": "/EM_WAVES_VISUALIZATION/index.html",
+    "main.e6c13ad2.css.map": "/EM_WAVES_VISUALIZATION/static/css/main.e6c13ad2.css.map",
+    "main.7190a36c.js.map": "/EM_WAVES_VISUALIZATION/static/js/main.7190a36c.js.map",
+    "453.3ef49dff.chunk.js.map": "/EM_WAVES_VISUALIZATION/static/js/453.3ef49dff.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.7190a36c.js"
+  ]
+}
