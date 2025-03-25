@@ -48,7 +48,6 @@ const EmWaveVisualization = () => {
     // wavelength = 4 ;
     return (
         <div>
-            //
             <Typography variant="h4" style={{textAlign: 'center'}}>Polarization of Uniform Plane Wave</Typography>
             <Canvas style={{ width: '100%', height: '100vh' }} camera={{ position: [6, 6, 8] }}>
                 <ambientLight intensity={0.5} />
